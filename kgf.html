@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Movie+</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="duplicatehome.php">
+                    <li class="menu-list-item active">Home</li></a>
+                    <a href="movies.php">
+                    <li class="menu-list-item">Movies</li></a>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <!-- <span class="profile-text">SignUp</span> -->
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+<section class="home-container" id="home">
+    <!-- Home Image -->
+    <img src="img/kgf-2-box-office.jpg" alt="" class="home-img">
+    <!-- Home Text -->
+    <div class="home-text">
+    <h1 class="home-title">K.G.F. <br> CHAPTER 2</h1>
+    <p>2h 48min | UA | 14th April</p>
+    <div class="watch-btn">
+        <img src="img/play.png" class="play-btn" onclick="playVideo('y2mate.com - KGF Chapter2 TEASER YashSanjay DuttRaveena TandonSrinidhi ShettyPrashanth NeelVijay Kiragandur_1080p.mp4')">
+        <span>Watch the trailer</span>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+      <source src="y2mate.com - KGF Chapter2 TEASER YashSanjay DuttRaveena TandonSrinidhi ShettyPrashanth NeelVijay Kiragandur_1080p.mp4" type="video/mp4">
+    </video>
+    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+
+    <!-- Ratings -->
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <!-- Tags -->
+    <div class="tags">
+    <span>Action</span>
+    <span>Drama</span>
+    <span>Period</span>
+</div>
+<a href="action.php?attr=1">
+<button class="movie-list-item-button">Book Now</button>
+</a>
+</section>
+<!-- Home End -->
+
+<!-- About -->
+<div class="about-movie container">
+        <h2>K.G.F. Chapter 2</h2>
+        <p>The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now - Rocky, whose name strikes fear in the heart of his foes. His allies look up to Rocky as their saviour, the government sees him as a threat to law and order; enemies are clamouring for revenge and conspiring for his downfall. Bloodier battles and darker days await as Rocky continues on his quest for unchallenged supremacy.</p>
+        <!-- Movie Cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img/cast1(new).jpg" alt="" class="cast-img">
+                <span class="cast-title">Raja Krishnappa Bairya</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/cast2.jpg" alt="" class="cast-img">
+                <span class="cast-title">Sanjay Dutt</span>
+            </div>
+        <div class="cast-box">
+            <img src="img/cast3.jpg" alt="" class="cast-img">
+            <span class="cast-title">Srinidhi Shetty</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast4.jpg" alt="" class="cast-img">
+            <span class="cast-title">Raveena Tandon</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast5.jpg" alt="" class="cast-img">
+            <span class="cast-title">Prakash Raj</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast6.jpg" alt="" class="cast-img">
+            <span class="cast-title">Anant Nag</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast7.jpg" alt="" class="cast-img">
+            <span class="cast-title">Achyuth Kumar</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast8.jpg" alt="" class="cast-img">
+            <span class="cast-title">Malavika Avinash</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/cast9.jpg" alt="" class="cast-img">
+            <span class="cast-title">T.S. Nagabharana</span>
+        </div>
+    </div>
+    </div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aboutus.js"></script>
+</body>
+</html>

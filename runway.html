@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Movie+</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">SignUp</span>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+<section class="home-container" id="home">
+    <!-- Home Image -->
+    <img src="img/runway-34.jpg" alt="" class="home-img">
+    <!-- Home Text -->
+    <div class="home-text">
+    <h1 class="home-title">Runway 34 </h1>
+    <p>2h 28min | UA | 29th April</p>
+    <div class="watch-btn">
+        <img src="img/play.png" class="play-btn" onclick="playVideo('y2mate.com - Runway 34  Official Trailer  Amitabh Bachchan  Ajay Devgn  Rakul Preet  29th April 2022_1080p.mp4')">
+        <span>Watch the trailer</span>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+      <source src="y2mate.com - Runway 34  Official Trailer  Amitabh Bachchan  Ajay Devgn  Rakul Preet  29th April 2022_1080p.mp4">
+    </video>
+    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+
+    <!-- Ratings -->
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <!-- Tags -->
+    <div class="tags">
+    <span>Action</span>
+    <span>Drama</span>
+    <span>Thriller</span>
+</div>
+<a href="action.php?attr=5">
+<button class="movie-list-item-button">Book Now</button>
+</a>
+</section>
+<!-- Home End -->
+
+<!-- About -->
+<div class="about-movie container">
+        <h2>Runway 34</h2>
+        <p>Inspired by true incidents, Runway 34 revolves around Captain Vikrant Khanna played by Ajay Devgn, a flying prodigy, whose flight takes a mysterious course after take-off from an international destination.</p>
+        <!-- Movie Cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img/ajay.jpg" alt="" class="cast-img">
+                <span class="cast-title">Ajay Devgn</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/amitabh.png" alt="" class="cast-img">
+                <span class="cast-title">Amitabh Bachchan</span>
+            </div>
+        <div class="cast-box">
+            <img src="img/rakul.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Rakul Preet Singh</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/aakanksha.jpg" alt="" class="cast-img">
+            <span class="cast-title">Aakanksha Singh </span>
+        </div>
+        <div class="cast-box">
+            <img src="img/Angira.jpg" alt="" class="cast-img">
+            <span class="cast-title">Angira Dhar</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/boman.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Boman Irani</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/avinash.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Avinash Kuri</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/palak.jpg" alt="" class="cast-img">
+            <span class="cast-title">Palak Singh</span>
+        </div>
+        <!-- <div class="cast-box">
+            <img src="img/ejiofor.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Chiwetel Ejiofor</span>
+        </div>
+         -->
+        
+    </div>
+    </div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aboutus.js"></script>
+</body>
+</html>

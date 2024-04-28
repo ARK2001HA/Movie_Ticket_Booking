@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Movie+</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">SignUp</span>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+<section class="home-container" id="home">
+    <!-- Home Image -->
+    <img src="img/Movie-backdrops-6-1628664639.webp" alt="" class="home-img">
+    <!-- Home Text -->
+    <div class="home-text">
+    <h1 class="home-title">Kishmish </h1>
+    <p>2h 21min | U | 29th April</p>
+    <div class="watch-btn">
+        <img src="img/play.png" class="play-btn" onclick="playVideo('y2mate.com - Kishmish Trailer  Dev  Rukmini Maitra  Rahool Mukherjee  Releasing 29th April_1080p.mp4')">
+        <span>Watch the trailer</span>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+      <source src="y2mate.com - Kishmish Trailer  Dev  Rukmini Maitra  Rahool Mukherjee  Releasing 29th April_1080p.mp4">
+    </video>
+    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+
+    <!-- Ratings -->
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <!-- Tags -->
+    <div class="tags">
+    <span>Comedy</span>
+    <!-- <span>Drama</span> -->
+    <span>Romantic</span>
+</div>
+<a href="action.php?attr=7">
+<button class="movie-list-item-button">Book Now</button>
+</a>
+</section>
+<!-- Home End -->
+
+<!-- About -->
+<div class="about-movie container">
+        <h2>Kishmish</h2>
+        <p>Kishmish is a Bengali movie starring Dev, Rukmini Maitra. Kharaj Mukherjee in prominent roles. It is a romantic movie directed & written by Rahool Mukherjee with Dev Adhikari as producer, forming part of the crew.</p>
+        <!-- Movie Cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img/dev.jpg" alt="" class="cast-img">
+                <span class="cast-title">Dev Adhikari</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/rukmini.jpg" alt="" class="cast-img">
+                <span class="cast-title">Rukmini Maitra</span>
+            </div>
+        <div class="cast-box">
+            <img src="img/kharaj.webp" alt="" class="cast-img">
+            <span class="cast-title">Kharaj Mukherjee</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/kamaleshwar.jpg" alt="" class="cast-img">
+            <span class="cast-title">Kamaleshwar Mukherjee</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/june.jpg" alt="" class="cast-img">
+            <span class="cast-title">June Maliah</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/anjana.jpg" alt="" class="cast-img">
+            <span class="cast-title">Anjana Basu</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/lily.webp" alt="" class="cast-img">
+            <span class="cast-title">Lily Chakraborty</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/rahool.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Rahool Mukherjee</span>
+        </div>
+        <!-- <div class="cast-box">
+            <img src="img/ejiofor.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Chiwetel Ejiofor</span>
+        </div>
+         -->
+        
+    </div>
+    </div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aboutus.js"></script>
+</body>
+</html>

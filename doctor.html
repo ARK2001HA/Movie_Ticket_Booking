@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Movie+</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">SignUp</span>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+<section class="home-container" id="home">
+    <!-- Home Image -->
+    <img src="img/doctor-strange.jpg" alt="" class="home-img">
+    <!-- Home Text -->
+    <div class="home-text">
+    <h1 class="home-title">Doctor Strange: <br>  In The Multiverse Of Madness</h1>
+    <p>2h 6min | UA | 6th May</p>
+    <div class="watch-btn">
+        <img src="img/play.png" class="play-btn" onclick="playVideo('y2mate.com - Marvel Studios Doctor Strange in the Multiverse of Madness  Official Trailer_1080p.mp4')">
+        <span>Watch the trailer</span>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+      <source src="y2mate.com - Marvel Studios Doctor Strange in the Multiverse of Madness  Official Trailer_1080p.mp4">
+    </video>
+    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+
+    <!-- Ratings -->
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <!-- Tags -->
+    <div class="tags">
+    <span>Action</span>
+    <span>Adventure</span>
+    <span>Fantasy</span>
+</div>
+<a href="action.php?attr=3">
+<button class="movie-list-item-button">Book Now</button>
+</a>
+</section>
+<!-- Home End -->
+
+<!-- About -->
+<div class="about-movie container">
+        <h2>Doctor Strange:In The Multiverse Of Madness</h2>
+        <p>Doctor Strange in the Multiverse of Madness - a thrilling ride through the Multiverse with Doctor Strange, his trusted friend Wong and Wanda Maximoff, aka Scarlet Witch.</p>
+        <!-- Movie Cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img/strange.jpeg" alt="" class="cast-img">
+                <span class="cast-title">Benedict Cumberbatch</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/wanda.jpg" alt="" class="cast-img">
+                <span class="cast-title">Elizabeth Olsen</span>
+            </div>
+        <div class="cast-box">
+            <img src="img/as.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Xochitl Gomez</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/christine.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Rachel McAdams</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/wong.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Benedict Wong</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/ejiofor.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Chiwetel Ejiofor</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/patrick.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Patrick Stewart</span>
+        </div>
+        <div class="cast-box">
+            <img src="img/bruce.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Bruce Campbell</span>
+        </div>
+        <!-- <div class="cast-box">
+            <img src="img/ejiofor.jpeg" alt="" class="cast-img">
+            <span class="cast-title">Chiwetel Ejiofor</span>
+        </div>
+         -->
+        
+    </div>
+    </div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aboutus.js"></script>
+</body>
+</html>
